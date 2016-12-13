@@ -1,3 +1,10 @@
+//SuperClass to avoid repeating this code
+var Character = function() {
+    ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
+};
+//inheritance from supperclass
+var Enemy = Object.create(Character);
+Enemy.prototype.constructor = Enemy;
 // Enemies our player must avoid
 var Enemy = function(x, y) {
     // Variables applied to each of our instances go here,
@@ -34,8 +41,10 @@ Enemy.prototype.update = function(dt) {
 };
 
 // Draw the enemy on the screen, required method for game
+//inheritance from superclass
 Enemy.prototype.render = function() {
-    ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
+    Character.call(this);
+    //ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
 
 // Now write your own player class
@@ -74,7 +83,8 @@ Player.prototype.update = function() {
 
 // Draw the player on the screen, required method for game
 Player.prototype.render = function() {
-    ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
+    Character.call(this);
+    //ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
 
 // Handle user input for controlling the player
