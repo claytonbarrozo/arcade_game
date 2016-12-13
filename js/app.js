@@ -157,7 +157,7 @@ document.addEventListener('keyup', function(e) {
     player.handleInput(allowedKeys[e.keyCode]);
 });
 //Enemy random speed 
-function getRandomInt(slow,fast, min, max, medium, faster) {
+function getRandomInt(min, max, fast, faster, slower) {
     return Math.floor((Math.random() * (max - min + 1)) + min);
 };
 
