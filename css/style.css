@@ -1,0 +1,62 @@
+/******************
+     BODY
+************************/
+html {
+  position: relative;
+  min-height: 100%;
+
+}
+body {
+  /* This code is for the bottom info*/
+  font-family: "Lato", sans-serif;
+  background-color: #E6E6FA;
+  margin-bottom: 20px;
+  text-align: center;
+
+}
+h1 {
+  margin: 1px;
+  margin-bottom: 1px;
+}
+
+/******************
+     Footer
+************************/
+
+.footer {
+  background-color: #E6E6FA;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  border-top: 1px solid #e7e7e7;
+  background-color: #E6E6FA;
+}
+
+.footer a {
+  color: #777;
+}
+
+.footer a:hover,
+.footer a:focus {
+  color: #333;
+}
+
+.footer p {
+  margin: 0;
+  padding: 0;
+}
+
+.footer .footer-links {
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.footer .footer-links li {
+  display: inline-block;
+}
+
