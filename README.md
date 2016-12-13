@@ -9,7 +9,7 @@ This simple game, you need just get to the water to win a point.
 
 If a bug hit you lose a point. 
 
-Please click [here]() to play the game on your browser. 
+Please click [here](https://claytonbarrozo.github.io/arcade_game/index.html) to play the game on your browser. 
 
 
 
