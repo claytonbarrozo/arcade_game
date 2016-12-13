@@ -158,7 +158,7 @@ document.addEventListener('keyup', function(e) {
     player.handleInput(allowedKeys[e.keyCode]);
 });
 
-function getRandomInt(min, max, fast, faster, slower) {
+function getRandomInt(min, max) {
     return Math.floor((Math.random() * (max - min + 1)) + min);
 };
 
