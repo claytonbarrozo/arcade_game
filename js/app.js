@@ -12,11 +12,12 @@ var Enemy = function(x, y) {
 
     // The image/sprite for our enemies, this uses
     // a helper we've provided to easily load images
-    this.sprite = 'images/enemy-bug.png';
+    
 
     this.x = x;
     this.y = y;
     this.speed = Math.random() * (400 - 60) + 600;
+    this.sprite = 'images/enemy-bug.png';
 }; //This code is the speed of the bugs
 
 // Update the enemy's position, required method for game
@@ -29,7 +30,7 @@ Enemy.prototype.update = function(dt) {
 
     if (this.x > 5 * 101) { //This code brings the bugs got from one side to the other
         this.x = -101; //this is code shows the bugs moving smothly from the right side
-        this.speed = getRandomInt(100, 200);
+        this.speed = getRandomInt(100, 300);
     }
 
     // Handle collisions with the player
@@ -156,8 +157,8 @@ document.addEventListener('keyup', function(e) {
 
     player.handleInput(allowedKeys[e.keyCode]);
 });
-//Enemy random speed 
-function getRandomInt(min, max) {
+
+function getRandomInt(min, max, fast, faster, slower) {
     return Math.floor((Math.random() * (max - min + 1)) + min);
 };
 
